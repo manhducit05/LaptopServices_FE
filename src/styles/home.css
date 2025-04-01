@@ -1,0 +1,172 @@
+/* section warranty */
+@keyframes rotate-icon {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+.warranty-section i {
+    display: inline-block;
+    font-size: 40px;
+    animation: rotate-icon 1.5s infinite ease-in-out;
+}
+
+.warranty-section .fa-clock {
+    animation-delay: 0s;
+}
+
+.warranty-section .fa-fire {
+    animation-delay: 0.3s;
+}
+
+.warranty-section .fa-screwdriver-wrench {
+    animation-delay: 0.6s;
+}
+
+.warranty-section .fa-map-location-dot {
+    animation-delay: 0.9s;
+}
+
+
+.warranty-section i {
+    display: inline-block;
+    font-size: 40px;
+    animation: rotate-icon 1.5s infinite ease-in-out;
+}
+
+.warranty-section .fa-clock {
+    animation-delay: 0s;
+}
+
+.warranty-section .fa-fire {
+    animation-delay: 0.3s;
+}
+
+.warranty-section .fa-screwdriver-wrench {
+    animation-delay: 0.6s;
+}
+
+.warranty-section .fa-map-location-dot {
+    animation-delay: 0.9s;
+}
+
+
+
+/* section choose brand */
+.chooseBrand-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.chooseBrand-section .new {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    max-width: 23%;
+    /* Đảm bảo 4 cột cân đối trên 1 hàng */
+    background-color: #007bff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.chooseBrand-section .new img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    /* Giữ kích thước ảnh đồng đều */
+    border-radius: 10px;
+}
+
+.chooseBrand-section .desc {
+    background-color: white;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.chooseBrand-section .new button {
+    z-index: 10;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .chooseBrand-section .new {
+        max-width: 48%;
+        /* 2 cột trên tablet */
+    }
+}
+
+@media (max-width: 576px) {
+    .chooseBrand-section .new {
+        max-width: 100%;
+        /* 1 cột trên mobile */
+    }
+}
+
+
+
+/* section service */
+
+.service-section {
+    background-color: #1c2b36;
+    padding: 50px 0;
+}
+
+.service-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.service-box {
+    background-color: #2e3e4e;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #007bff;
+}
+
+.service-content {
+    padding: 20px;
+    color: white;
+}
+
+.service-content h3 {
+    font-size: 20px;
+    color: #007bff;
+}
+
+.service-content h3 span {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.service-content p {
+    font-size: 16px;
+    color: #ddd;
+}

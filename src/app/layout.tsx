@@ -1,6 +1,10 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import '@fortawesome/fontawesome-free/css/all.min.css';  // Thêm FontAwesome vào
+import "bootstrap/dist/css/bootstrap.min.css";
+import '@/styles/home.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -15,7 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        <main>
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   )
 }
