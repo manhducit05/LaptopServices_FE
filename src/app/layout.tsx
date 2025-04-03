@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import '@fortawesome/fontawesome-free/css/all.min.css';  // Thêm FontAwesome vào
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import '@/styles/home.css'
 const inter = Inter({ subsets: ['latin'] })
 

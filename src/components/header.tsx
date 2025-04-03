@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { Navbar, Nav, Container, Row, Col, Badge } from "react-bootstrap";
 import '@/styles/header.css'
-
 export default function Header() {
     const [expanded, setExpanded] = useState(false);
 
@@ -21,12 +20,12 @@ export default function Header() {
                             </div>
                         </Col>
                         <Col xs={12} md={6} className="d-flex justify-content-md-end">
-                            <div className="booking d-flex align-items-center mb-2 mb-md-0">
+                            <Link href="/booking" className="booking d-flex align-items-center mb-2 mb-md-0">
                                 <div className="icon">
                                     <i className="fa-solid fa-calendar-days" style={{ color: "#0D6EFD" }}></i>
                                 </div>
                                 <h4 className="ms-2 desc text-primary mb-0">Đặt lịch sửa chữa</h4>
-                            </div>
+                            </Link>
                             <div className="d-flex align-items-center ms-md-4">
                                 <div className="icon">
                                     <i className="fa-solid fa-phone-volume me-1" style={{ color: "#DC3545", }}></i>
@@ -53,7 +52,7 @@ export default function Header() {
                                 <Nav.Link as={Link} href="/" className="text-light">Tin tức</Nav.Link>
                                 <Nav.Link as={Link} href="/" className="text-light">Laptop</Nav.Link>
                                 <Nav.Link as={Link} href="/" className="text-light">Báo giá</Nav.Link>
-                                <Nav.Link as={Link} href="/" className="text-light">Đặt lịch</Nav.Link>
+                                <Nav.Link as={Link} href="/booking" className="text-light">Đặt lịch</Nav.Link>
                                 <Nav.Link as={Link} href="/" className="text-light">Liên hệ</Nav.Link>
                                 <Nav.Link as={Link} href="/" className="text-light">Test online</Nav.Link>
                             </Nav>

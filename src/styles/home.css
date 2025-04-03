@@ -170,3 +170,8 @@
     font-size: 16px;
     color: #ddd;
 }
+
+/* section customer */
+.section-customer img{
+    margin: 10px;
+}

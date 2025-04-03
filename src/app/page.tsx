@@ -1,9 +1,10 @@
 'use client';
-
+import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import "@/styles/home.css"
+
 
 export default function Home() {
   useEffect(() => {
@@ -11,6 +12,7 @@ export default function Home() {
   }, []);
 
   return (
+
     <Container className='mt-5'>
 
       <section className='carousel'>
@@ -85,7 +87,7 @@ export default function Home() {
           <div className="row mt-2">
             <div className="col text-center bg-warning py-3">
               <span className="fw-bold">Bạn muốn laptop của bạn bền hơn - Hãy bảo dưỡng định kỳ</span>
-              <button className="btn btn-light ms-3">Xem thêm</button>
+              <Link href="/news/1" className="btn btn-light ms-3">Xem thêm</Link>
             </div>
           </div>
         </div>
@@ -176,6 +178,21 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
+      </section>
+      <section className='section-customer mt-5'>
+        <h2 className='text-center mb-3'>Hình ảnh khách hàng & các hoạt động của chúng tôi
+        </h2>
+        <div className='row'>
+          <div className='col-6 col-md-4'><img src="/img/home/customer1.webp" alt="customer" /></div>
+          <div className='col-6 col-md-4'><img src="/img/home/customer2.webp" alt="customer" /></div>
+          <div className='col-6 col-md-4'><img src="/img/home/customer3.webp" alt="customer" /></div>
+          <div className='col-6 col-md-4'><img src="/img/home/customer4.webp" alt="customer" /></div>
+          <div className='col-6 col-md-4'><img src="/img/home/customer5.webp" alt="customer" /></div>
+          <div className='col-6 col-md-4'><img src="/img/home/customer6.webp" alt="customer" /></div>
+          <div className='col-6 col-md-4'><img src="/img/home/customer7.webp" alt="customer" /></div>
+          <div className='col-6 col-md-4'><img src="/img/home/customer8.webp" alt="customer" /></div>
+          <div className='col-6 col-md-4'><img src="/img/home/customer9.webp" alt="customer" /></div>
+        </div>
       </section>
     </Container>
   );
